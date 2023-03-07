@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';  //importar components
+import './App.css';  
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  const titulo = "PRIMER PRÁCTICA"
+  const imagen = "https://picsum.photos/200/300"
+  const parrafo = "Hola a todos esta es mi primer práctica"
+  
+  //-----------------------------
+  // lógica del componente 
+  return (    //return es la que se encarga de renderizar el conten
+    <div> 
+      <h1>{titulo}</h1>
+      <img src = {imagen} alt = "algo"/>
+      <p>{parrafo}</p>
+
+    </div>   
   );
-}
+}   //title, img , p
 
 export default App;
+
